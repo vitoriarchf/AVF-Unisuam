@@ -10,4 +10,14 @@
       <ion-title size="large">api</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <div class="ion-padding">
+    <ion-button expand="block" (click)="getJoke()" [disabled]="loading">
+      {{ loading ? 'Carregando...' : 'Nova piada' }}
+    </ion-button>
+    <div *ngIf="joke">
+      <h2>{{ joke.setup }}</h2>
+      <p><strong>{{ joke.punchline }}</strong></p>
+    </div>
+  </div>
 </ion-content>
