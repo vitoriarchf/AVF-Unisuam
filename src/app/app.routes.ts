@@ -16,4 +16,9 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./sobre/sobre.page').then((c) => c.SobrePage)
   },
+  {
+    path: 'api',
+    loadComponent: () => import('./api/api.page').then( m => m.ApiPage)
+  },
+
 ];

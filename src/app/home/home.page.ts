@@ -14,4 +14,8 @@ export class HomePage {
   irParaSobre() {
     this.router.navigate(['/sobre']);
   }
+
+  irParaApi() {
+    this.router.navigate(['/api']);
+  }
 }
