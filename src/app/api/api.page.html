@@ -1,23 +1,23 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>api</ion-title>
+    <ion-title>Fatos sobre gatos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">api</ion-title>
+      <ion-title size="large">Fatos sobre gatos</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div class="ion-padding">
-    <ion-button expand="block" (click)="getJoke()" [disabled]="loading">
-      {{ loading ? 'Carregando...' : 'Nova piada' }}
+    <ion-button expand="block" (click)="getCatFact()" [disabled]="loading">
+      {{ loading ? 'Carregando...' : 'Novo fato' }}
     </ion-button>
-    <div *ngIf="joke">
-      <h2>{{ joke.setup }}</h2>
-      <p><strong>{{ joke.punchline }}</strong></p>
+    <div *ngIf="catFact">
+      <h2>{{ catFact }}</h2>
     </div>
+    <ion-button routerLink="/">Voltar</ion-button>
   </div>
 </ion-content>
