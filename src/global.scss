@@ -35,3 +35,21 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+ion-button {
+  --background: #541d54;
+  --background-activated: #541d54;
+  --background-focused: #4c8dff;
+  --background-hover: #4c8dff;
+  --background-pressed: #3171e0;
+  --border-color: transparent;
+  --border-color-activated: transparent;
+  --border-color-focused: transparent;
+  --border-color-hover: transparent;
+  --border-color-pressed: transparent;
+  --color: #ffffff;
+  --color-activated: #ffffff;
+  --color-focused: #ffffff;
+  --color-hover: #ffffff;
+  --color-pressed: #ffffff;
+}
